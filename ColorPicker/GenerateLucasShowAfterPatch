@@ -1,0 +1,63 @@
+function print (msg)
+    -- gma.feedback(msg)
+    Echo(msg)
+end
+
+function generateColorSequences()
+    Cmd('ClearAll')
+    local colorList = {
+                'White',
+                'CTO',
+                'CTB',
+                'Red',
+                'Orange',
+                'Yellow',
+                'Fern Green',
+                'Green',
+                'Sea Green',
+                'Cyan',
+                'Lavender',
+                'Blue',
+                'Violet',
+                'Magenta',
+                'Pink'
+            }
+    SeqNum = 0
+    for k = 1, 6, 1 do
+        for i = 1, 15, 1 do
+            local colorNum = i
+            SeqNum = SeqNum + 1
+            Cmd('Group '.. k)
+            Cmd('At Preset 4.'..colorNum)
+
+            if SeqNum < 10 then
+                Cmd('Store Sequence 300'..k.. ' Cue ' ..SeqNum.. ' /C')
+                Cmd('Label Sequence 300'..k.. ' Cue '..SeqNum..' \"'..colorList[i]..'\"')
+            else
+                Cmd('Store Sequence 30'..k.. ' Cue '..SeqNum.. ' /C')
+                Cmd('Label Sequence 30'..k.. ' Cue '..SeqNum..' \"'..colorList[i]..'\"')
+            end
+        end
+    end
+end
+
+function generateDimmerSequences()
+    Cmd('ClearAll')
+    for k = 1, 6, 1 do
+        Cmd('Group '.. k)
+        Cmd('At Preset 1.1')
+        Cmd('Store Sequence 200'..k.. ' /O')
+        Cmd('Assign Sequence 200'..k.. ' At Page 1.20'..k..' /O')
+        Cmd('Label Sequence 200'..k..' \"Dimmer\"')
+    end
+end
+
+function main()
+    Cmd('blind')
+    generateDimmerSequences()
+    generateColorSequences()
+    Cmd('blind off')
+    print('End of plugin')
+end
+
+return main
