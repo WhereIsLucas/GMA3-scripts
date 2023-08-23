@@ -3,7 +3,7 @@ function print (msg)
     Echo(msg)
 end
 
-function colors()
+function generateColors()
     Cmd('Group 1 thru')
 
     Cmd('At Gel "MA"."white"')
@@ -152,7 +152,7 @@ function main()
 
     views()
     groups()
-    colors()
+    generateColors()
     sequences()
     Cmd('blind off')
     print('End of plugin')
