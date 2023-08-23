@@ -138,10 +138,10 @@ function sequences()
 
             if SeqNum < 10 then
                 Cmd('Store Sequence 300'..k.. ' Cue ' ..SeqNum.. ' /C')
-                Cmd('Label Sequence 300'..k.. ' Cue '..SeqNum..' \"'..colors[i]..'\"')
+                Cmd('Label Sequence 300'..k.. ' Cue '..SeqNum..' \"'..colorList[i]..'\"')
             else
                 Cmd('Store Sequence 30'..k.. ' Cue '..SeqNum.. ' /C')
-                Cmd('Label Sequence 30'..k.. ' Cue '..SeqNum..' \"'..colors[i]..'\"')
+                Cmd('Label Sequence 30'..k.. ' Cue '..SeqNum..' \"'..colorList[i]..'\"')
             end
         end
     end
