@@ -1,0 +1,116 @@
+function print (msg)
+    -- gma.feedback(msg)
+    Echo(msg)
+end
+
+function colors()
+    Cmd('Group 1 thru')
+
+    Cmd('At Gel "MA"."white"')
+    Cmd('Store Preset 4.1')
+    Cmd('Label Preset 4.1 "White"')
+
+    Cmd('At Gel "Cinegel"."Roscosun 1/2 CTO"')
+    Cmd('Store Preset 4.2')
+    Cmd('Label Preset 4.2 "CTO"')
+
+    Cmd('At Gel "Cinegel"."Half Blue CTB"')
+    Cmd('Store Preset 4.3')
+    Cmd('Label Preset 4.3 "CTB"')
+
+    Cmd('At Gel "MA"."red"')
+    Cmd('Store Preset 4.4')
+    Cmd('Label Preset 4.4 "Red"')
+
+    Cmd('At Gel "MA"."orange"')
+    Cmd('Store Preset 4.5')
+    Cmd('Label Preset 4.5 "Orange"')
+
+    Cmd('At Gel "MA"."yellow"')
+    Cmd('Store Preset 4.6')
+    Cmd('Label Preset 4.6 "Yellow"')
+
+    Cmd('At Gel "MA"."Fern Green"')
+    Cmd('Store Preset 4.7')
+    Cmd('Label Preset 4.7 "Fern Green"')
+
+    Cmd('At Gel "MA"."Green"')
+    Cmd('Store Preset 4.8')
+    Cmd('Label Preset 4.8 "Green"')
+
+    Cmd('At Gel "MA"."Sea Green"')
+    Cmd('Store Preset 4.9')
+    Cmd('Label Preset 4.9 "Sea Green"')
+
+    Cmd('At Gel "MA"."Cyan"')
+    Cmd('Store Preset 4.10')
+    Cmd('Label Preset 4.10 "Cyan"')
+
+    Cmd('At Gel "MA"."Lavender"')
+    Cmd('Store Preset 4.11')
+    Cmd('Label Preset 4.11 "Lavender"')
+
+    Cmd('At Gel "MA"."Blue"')
+    Cmd('Store Preset 4.12')
+    Cmd('Label Preset 4.12 "Blue"')
+
+    Cmd('At Gel "MA"."Violet"')
+    Cmd('Store Preset 4.13')
+    Cmd('Label Preset 4.13 "Violet"')
+
+    Cmd('At Gel "MA"."Magenta"')
+    Cmd('Store Preset 4.14')
+    Cmd('Label Preset 4.14 "Magenta"')
+
+    Cmd('At Gel "MA"."Pink"')
+    Cmd('Store Preset 4.15')
+    Cmd('Label Preset 4.15 "Pink"')
+end
+
+function groups()
+    Cmd('Store Group 1')
+    Cmd('Label Group 1 "Wash 1 Grid"')
+
+    Cmd('Store Group 2')
+    Cmd('Label Group 2 "Wash 2 Grid"')
+
+    Cmd('Store Group 3')
+    Cmd('Label Group 3 "Spots 1 Grid"')
+
+    Cmd('Store Group 4')
+    Cmd('Label Group 4 "Spots 2 Grid"')
+
+    Cmd('Store Group 5')
+    Cmd('Label Group 5 "Extra 1 Grid"')
+
+    Cmd('Store Group 6')
+    Cmd('Label Group 6 "Extra 2 Grid"')
+
+    Cmd('Store Group 11')
+    Cmd('Label Group 11 "Wash 1"')
+
+    Cmd('Store Group 12')
+    Cmd('Label Group 12 "Wash 2"')
+
+    Cmd('Store Group 13')
+    Cmd('Label Group 13 "Spots 1"')
+
+    Cmd('Store Group 14')
+    Cmd('Label Group 14 "Spots 2"')
+
+    Cmd('Store Group 15')
+    Cmd('Label Group 15 "Extra 1"')
+
+    Cmd('Store Group 16')
+    Cmd('Label Group 16 "Extra 2"')
+end
+
+function main()
+    Cmd('blind')
+    groups()
+    colors()
+    Cmd('blind off')
+    print('End of plugin')
+end
+
+return main
