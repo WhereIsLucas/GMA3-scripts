@@ -5,41 +5,31 @@ end
 
 
 function groups()
-    Cmd('Store Group 1 /Overwrite')
-    Cmd('Label Group 1 "Wash 1 Grid"')
 
-    Cmd('Store Group 2 /Overwrite')
-    Cmd('Label Group 2 "Wash 2 Grid"')
+    local groupList = {
+    'Wash 1',
+    'Wash 2',
+    'Spots 1',
+    'Spots 2',
+    'Extra 1',
+    'Extra 2',
+    }
 
-    Cmd('Store Group 3 /Overwrite')
-    Cmd('Label Group 3 "Spots 1 Grid"')
+    Cmd('ClearAll')
 
-    Cmd('Store Group 4 /Overwrite')
-    Cmd('Label Group 4 "Spots 2 Grid"')
+    for i, groupName in ipairs(groupList) do
+        Cmd('Store Group '..i..' /Overwrite')
+        Cmd('Label Group '..i..' "'..groupName..' Grid"')
 
-    Cmd('Store Group 5 /Overwrite')
-    Cmd('Label Group 5 "Extra 1 Grid"')
+        Cmd('Store Group '..(i+10)..' /Overwrite')
+        Cmd('Label Group '..(i+10)..' "'..groupName)
 
-    Cmd('Store Group 6 /Overwrite')
-    Cmd('Label Group 6 "Extra 2 Grid"')
+       Cmd('Store Group '..(i+20)..' /Overwrite')
+       Cmd('Label Group '..(i+20)..' "'..groupName..' Odd"')
 
-    Cmd('Store Group 11 /Overwrite')
-    Cmd('Label Group 11 "Wash 1"')
-
-    Cmd('Store Group 12 /Overwrite')
-    Cmd('Label Group 12 "Wash 2"')
-
-    Cmd('Store Group 13 /Overwrite')
-    Cmd('Label Group 13 "Spots 1"')
-
-    Cmd('Store Group 14 /Overwrite')
-    Cmd('Label Group 14 "Spots 2"')
-
-    Cmd('Store Group 15 /Overwrite')
-    Cmd('Label Group 15 "Extra 1"')
-
-    Cmd('Store Group 16 /Overwrite')
-    Cmd('Label Group 16 "Extra 2"')
+       Cmd('Store Group '..(i+30)..' /Overwrite')
+       Cmd('Label Group '..(i+30)..' "'..groupName..' Even"')
+    end
 end
 
 
