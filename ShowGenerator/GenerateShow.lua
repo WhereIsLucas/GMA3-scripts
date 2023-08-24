@@ -4,6 +4,7 @@ function print (msg)
 end
 
 function generateColorPresets()
+    Cmd('ClearAll')
     Cmd('Group 1 thru')
 
     Cmd('At Gel "MA"."white"')
@@ -67,45 +68,8 @@ function generateColorPresets()
     Cmd('Label Preset 4.15 "Pink"')
 end
 
-function groups()
-    Cmd('Store Group 1 /Overwrite')
-    Cmd('Label Group 1 "Wash 1 Grid"')
-
-    Cmd('Store Group 2 /Overwrite')
-    Cmd('Label Group 2 "Wash 2 Grid"')
-
-    Cmd('Store Group 3 /Overwrite')
-    Cmd('Label Group 3 "Spots 1 Grid"')
-
-    Cmd('Store Group 4 /Overwrite')
-    Cmd('Label Group 4 "Spots 2 Grid"')
-
-    Cmd('Store Group 5 /Overwrite')
-    Cmd('Label Group 5 "Extra 1 Grid"')
-
-    Cmd('Store Group 6 /Overwrite')
-    Cmd('Label Group 6 "Extra 2 Grid"')
-
-    Cmd('Store Group 11 /Overwrite')
-    Cmd('Label Group 11 "Wash 1"')
-
-    Cmd('Store Group 12 /Overwrite')
-    Cmd('Label Group 12 "Wash 2"')
-
-    Cmd('Store Group 13 /Overwrite')
-    Cmd('Label Group 13 "Spots 1"')
-
-    Cmd('Store Group 14 /Overwrite')
-    Cmd('Label Group 14 "Spots 2"')
-
-    Cmd('Store Group 15 /Overwrite')
-    Cmd('Label Group 15 "Extra 1"')
-
-    Cmd('Store Group 16 /Overwrite')
-    Cmd('Label Group 16 "Extra 2"')
-end
-
 function generateDimmerPresets()
+    Cmd('ClearAll')
     Cmd('Group 1 At 100')
     Cmd('Store Preset 1.1 /Overwrite')
     Cmd('Label Preset 1.1 "100%"')
@@ -127,21 +91,63 @@ function generateDimmerPresets()
     Cmd('Label Preset 1.5 "0%"')
 end
 
-function views()
-    Cmd('Delete ScreenContent Default."*" /Screen "2"')
-    Cmd('Store ViewButton 2.10 "SHOW" /Screen "2" /Overwrite')
-    Cmd('Call ViewButton 2.10')
+
+
+function generateColorSequences()
+    Cmd('ClearAll')
+    local colorList = {
+                'White',
+                'CTO',
+                'CTB',
+                'Red',
+                'Orange',
+                'Yellow',
+                'Fern Green',
+                'Green',
+                'Sea Green',
+                'Cyan',
+                'Lavender',
+                'Blue',
+                'Violet',
+                'Magenta',
+                'Pink'
+            }
+    SeqNum = 3000
+    for k = 1, 6, 1 do
+        for i = 1, 15, 1 do
+            local colorNum = i
+            Cmd('Group '.. k)
+            SeqNum = SeqNum + 1
+            Cmd('At Preset 4.'..colorNum)
+
+            Cmd('Store Sequence '..k.. '/C')
+            Cmd('Label Sequence '..k..' \"'..colorList[i]..'\"')
+        end
+    end
 end
 
+function generateDimmerSequences()
+    Cmd('ClearAll')
+    SeqNum = 2000
+    for k = 1, 6, 1 do
+        SeqNum = SeqNum + 1
+        Cmd('Group '.. k)
+        Cmd('At Preset 1.1')
+        Cmd('Delete Sequence '..SeqNum)
+        Cmd('Store Sequence '..SeqNum.. ' /O')
+        Cmd('Assign Sequence '..SeqNum.. ' At Page 1.20'..k..' /O')
+    end
+end
 
 function main()
     Cmd('blind')
-    Cmd('Set Preset 4 Property "PresetMode" "Universal"')
     Cmd('Set Preset 1 Property "PresetMode" "Universal"')
-    views()
-    groups()
-    generateColorPresets()
     generateDimmerPresets()
+    Cmd('Set Preset 4 Property "PresetMode" "Universal"')
+    generateColorPresets()
+
+    generateDimmerSequences()
+    generateColorSequences()
     Cmd('blind off')
     print('End of plugin')
 end

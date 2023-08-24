@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<GMA3 DataVersion="1.9.3.3">
-    <UserPlugin Name="GenerateLucasShowAfterPatch" Guid="0D 49 20 01 1C 6B F8 1D 01 BB C9 B2 5C BF 3A C2" Author="WhereIsLucas" Version="0.0.0.0" UserRights="Admin">
-        <ComponentLua Name="[GenerateLucasShowAfterPatch]" Guid="0D 49 20 01 48 20 BA 06 2D A0 2F 9F 29 6F 82 C7" FileName="GenerateLucasShowAfterPatch" />
-    </UserPlugin>
-</GMA3>
