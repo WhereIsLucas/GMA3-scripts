@@ -136,6 +136,8 @@ function generateDimmerSequences()
         Cmd('Delete Sequence '..SeqNum)
         Cmd('Store Sequence '..SeqNum.. ' /O')
         Cmd('Assign Sequence '..SeqNum.. ' At Page 1.20'..k..' /O')
+        Cmd('Label Sequence '..SeqNum..' \"Dim Group\"')
+        Cmd('Edit Page 1.20'..k..' Property "Key" "Flash"')
     end
 end
 
