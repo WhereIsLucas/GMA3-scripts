@@ -4,8 +4,7 @@ function print (msg)
 end
 
 
-function groups()
-
+function generateGroups()
     local groupList = {
     'Wash 1',
     'Wash 2',
@@ -33,7 +32,7 @@ function groups()
 end
 
 
-function views()
+function generateViews()
     Cmd('Delete ScreenContent Default."*" /Screen "2"')
     Cmd('Store ViewButton 2.10 "SHOW" /Screen "2" /Overwrite')
     Cmd('Call ViewButton 2.10')
@@ -41,8 +40,8 @@ end
 
 
 function main()
-    views()
-    groups()
+    generateViews()
+    generateGroups()
 end
 
 return main
