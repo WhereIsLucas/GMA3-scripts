@@ -32,15 +32,7 @@ function generateGroups()
 end
 
 
-function generateViews()
-    Cmd('Delete ScreenContent Default."*" /Screen "2"')
-    Cmd('Store ViewButton 2.10 "SHOW" /Screen "2" /Overwrite')
-    Cmd('Call ViewButton 2.10')
-end
-
-
 function main()
-    generateViews()
     generateGroups()
 end
 
