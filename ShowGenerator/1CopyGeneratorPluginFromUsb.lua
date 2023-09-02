@@ -11,6 +11,12 @@ function main()
     Cmd("Library")
     Cmd("Select Drive 2")
     Cmd("Import Library 3 At Plugin 3 /NoConfirmation")
+
+    Cmd("Edit Plugin 4")
+    Cmd("Library")
+    Cmd("Select Drive 2")
+    Cmd("Import Library 4 At Plugin 4 /NoConfirmation")
+
 end
 
 return main
