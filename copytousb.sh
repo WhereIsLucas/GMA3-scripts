@@ -13,9 +13,3 @@ do
     echo "copying $file"
     cp "$file" /media/lucas/GMA3USB/grandMA3/gma3_library/datapools/plugins
 done
-
-for file in ./Symbols/*.png
-do
-    echo "copying $file"
-    cp "$file" /media/lucas/GMA3USB/grandMA3/gma3_library/datapools
-done

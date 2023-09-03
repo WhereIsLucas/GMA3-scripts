@@ -1,8 +1,4 @@
 function main()
-    Cmd("Edit Plugin 1")
-    Cmd("Select Drive 2")
-    Cmd("Import Library 1 At Plugin 1 /NoConfirmation")
-
     Cmd("Edit Plugin 2")
     Cmd("Select Drive 2")
     Cmd("Import Library 2 At Plugin 2 /NoConfirmation")
@@ -16,6 +12,10 @@ function main()
     Cmd("Library")
     Cmd("Select Drive 2")
     Cmd("Import Library 4 At Plugin 4 /NoConfirmation")
+
+    Cmd("Edit Plugin 1")
+    Cmd("Select Drive 2")
+    Cmd("Import Library 1 At Plugin 1 /NoConfirmation")
 end
 
 return main

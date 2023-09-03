@@ -34,7 +34,7 @@ end
 function generateApparences()
     Cmd('Store Appearance 100')
     Cmd('Label Appearance 100 "White"')
-    Cmd('Set Appearance.BgColor = #0000FF At 101')
+    Cmd('Assign Appearance BgColor At 101 / 255 0 0 0 100')
 
     Cmd('Store Appearance 101')
     Cmd('Label Appearance 101 "CTO"')
