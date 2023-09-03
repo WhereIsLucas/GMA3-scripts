@@ -1,5 +1,6 @@
 function print (msg)
     -- gma.feedback(msg)
+    -- Hello Lucas from laptop
     Echo(msg)
 end
 
