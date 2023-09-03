@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Macro Name="Cook/o Gobo" Guid="0D 49 20 00 D2 18 F3 17 83 BA 3F 11 67 54 B2 14" Appearance="Red Back">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;Appearances&apos;.&apos;Red Back&apos;" AddressNum="13.4.88">
+                <Appearance Name="Red Back" Guid="0D 49 20 00 EA 13 23 3C 10 73 76 07 73 59 B2 14" Color="1.000000,1.000000,1.000000,1.000000" BackR="255" BackAlpha="113" CreatedBy="Unknown" />
+            </Dependency>
+        </DependencyExport>
+        <MacroLine Guid="BA AD F0 0D 8E 42 9B 46 8B 7B 96 2E 5E 59 B9 CD" Command="Cook Sequence &quot;Gobo Group*&quot; /Overwrite" />
+        <MacroLine Guid="BA AD F0 0D 21 61 DF 04 40 02 7F 33 5E 59 B9 CD" Command="Cook Sequence &quot;Gobo Rotate&quot; /Overwrite" />
+    </Macro>
+</GMA3>

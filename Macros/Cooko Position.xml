@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Macro Name="Cook/o Position" Guid="0D 49 20 00 C9 C0 C9 7F ED CF 0E 1B 69 54 B2 14" Appearance="Red Back">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;Appearances&apos;.&apos;Red Back&apos;" AddressNum="13.4.88">
+                <Appearance Name="Red Back" Guid="0D 49 20 00 EA 13 23 3C 10 73 76 07 73 59 B2 14" Color="1.000000,1.000000,1.000000,1.000000" BackR="255" BackAlpha="113" CreatedBy="Unknown" />
+            </Dependency>
+        </DependencyExport>
+        <MacroLine Guid="BA AD F0 0D 5B D7 BE 49 21 6E C5 24 5E 59 B9 CD" Command="Cook Sequence &quot;Position Group*&quot; /Overwrite" />
+    </Macro>
+</GMA3>

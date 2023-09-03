@@ -141,12 +141,53 @@ function generateDimmerSequences()
     end
 end
 
+function generatePositionsPresets()
+    Cmd('ClearAll')
+    for k = 1, 6, 1 do
+        Cmd('Group '.. k)
+        Cmd('Group '.. k+18)
+        Cmd('Attribute "Pan" At Absolute Physical 0')
+        Cmd('Attribute "Tilt" At Absolute Physical -45')
+        Cmd('Store Preset 2. "Straight" /Merge')
+        Cmd('Attribute "Pan" At Absolute Physical 30 Thru -30')
+        Cmd('Store Preset 2. "Fan In" /Merge')
+        Cmd('Attribute "Pan" At Absolute Physical -30 Thru 30')
+        Cmd('Store Preset 2. "Fan Out" /Merge')
+
+        Cmd('Group '.. k+36)
+        Cmd('Attribute "Pan" At Absolute Physical -30')
+        Cmd('Group '.. k+72)
+        Cmd('Attribute "Pan" At Absolute Physical 30')
+
+        Cmd('Group '.. k)
+        Cmd('Store Preset 2. "Cross" /Merge')
+        Cmd('Attribute "Tilt" At Absolute Physical -95')
+        Cmd('Attribute "Pan" At Preset 2. "Straight"')
+        Cmd('Store Preset 2."UP Straight" /Merge')
+        Cmd('At Preset 2. "UP Straight"')
+        Cmd('Attribute "Pan" At Preset 2. "Fan In"')
+        Cmd('Store Preset 2. "UP Fan In" /Merge')
+        Cmd('At Preset 2. "UP Fan In"')
+        Cmd('Attribute "Pan" At Preset 2. "Fan Out"')
+        Cmd('Store Preset 2. "UP Fan Out" /Merge')
+        Cmd('At Preset 2. "UP Fan Out"')
+        Cmd('Attribute "Pan" At Preset 2. "Cross"')
+        Cmd('Store Preset 2."UP Cross" /Merge')
+        Cmd('Attribute "Tilt" At Absolute Physical -60')
+        Cmd('Attribute "Pan" At Preset 2. "Straight"')
+        Cmd('Store Preset 2. "Blind" /Merge')
+        Cmd('ClearAll')
+    end
+end
+
 function main()
     Cmd('blind')
     Cmd('Set Preset 1 Property "PresetMode" "Universal"')
     generateDimmerPresets()
     generateDimmerSequences()
 
+    Cmd('Set Preset 2 Property "PresetMode" "Universal"')
+    generatePositionsPresets()
 
     Cmd('Set Preset 4 Property "PresetMode" "Universal"')
     generateColorPresets()

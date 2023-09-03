@@ -6,12 +6,12 @@ end
 
 function generateGroups()
     local groupList = {
-    'Wash 1',
-    'Wash 2',
-    'Spots 1',
-    'Spots 2',
-    'Extra 1',
-    'Extra 2',
+    'L 1',
+    'L 2',
+    'L 3',
+    'L 4',
+    'L 5',
+    'L 6',
     }
 
     Cmd('ClearAll')
@@ -20,14 +20,14 @@ function generateGroups()
         Cmd('Store Group '..i..' /Overwrite')
         Cmd('Label Group '..i..' "'..groupName..' Grid"')
 
-        Cmd('Store Group '..(i+10)..' /Overwrite')
-        Cmd('Label Group '..(i+10)..' "'..groupName)
+        Cmd('Store Group '..(i+18)..' /Overwrite')
+        Cmd('Label Group '..(i+18)..' "'..groupName)
 
-       Cmd('Store Group '..(i+20)..' /Overwrite')
-       Cmd('Label Group '..(i+20)..' "'..groupName..' Odd"')
+       Cmd('Store Group '..(i+36)..' /Overwrite')
+       Cmd('Label Group '..(i+36)..' "'..groupName..' Odd"')
 
-       Cmd('Store Group '..(i+30)..' /Overwrite')
-       Cmd('Label Group '..(i+30)..' "'..groupName..' Even"')
+       Cmd('Store Group '..(i+72)..' /Overwrite')
+       Cmd('Label Group '..(i+72)..' "'..groupName..' Even"')
     end
 end
 
