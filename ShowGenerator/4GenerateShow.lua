@@ -1,6 +1,4 @@
 function print (msg)
-    -- gma.feedback(msg)
-    -- Hello Lucas from laptop
     Echo(msg)
 end
 
@@ -74,24 +72,32 @@ end
 
 function generateColorSequences()
     Cmd('ClearAll')
-    SeqNum = 3000
+    local GlobalSeqNum = 3000
+    local SingleSeqNum = 4000
     for k = 1, 6, 1 do
         for i = 1, 15, 1 do
             local colorNum = i
             Cmd('Group ' .. k)
-            SeqNum = SeqNum + 1
+            GlobalSeqNum = GlobalSeqNum + 1
             Cmd('At Preset 4.' .. colorNum)
             Cmd('Store Sequence ' .. k .. '/C')
-            Cmd('Label Sequence ' .. k .. '"Colors L' .. k .. '"')
-            Cmd('Assign Sequence ' .. k .. ' At Page 1.40' .. k .. ' /O')
-        end
+            Cmd('Label Sequence ' .. k .. ' "Colors L"' .. k)
+            Cmd('Assign Sequence ' .. k .. ' At Page 1.30' .. k .. ' /O')
 
+            SingleSeqNum = SingleSeqNum + 1
+            Cmd('ClearAll')
+            Cmd('Group ' .. k)
+            Cmd('At Preset 4.' .. colorNum)
+            Cmd('Store Sequence ' .. SingleSeqNum .. '/C')
+            Cmd('Label Sequence ' .. SingleSeqNum .. ' \"Color L\"'.. k .. colorNum)
+            Cmd('Assign Appearance ' .. 100 + colorNum .. ' At Sequence ' .. SingleSeqNum .. ' /O')
+        end
     end
 end
 
 function generateDimmerSequences()
     Cmd('ClearAll')
-    SeqNum = 2000
+    local SeqNum = 2000
     for k = 1, 6, 1 do
         SeqNum = SeqNum + 1
         Cmd('Group ' .. k)
