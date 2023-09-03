@@ -7,81 +7,45 @@ function generateColorPresets()
     Cmd('ClearAll')
     Cmd('Group 1 thru')
 
-    Cmd('At Gel "MA"."white"')
-    Cmd('Store Preset 4.1 /Overwrite')
-    Cmd('Label Preset 4.1 "White"')
-    Cmd('Assign Appearance "White" At Preset 4.1')
+    local White = { R = 255, G = 255, B = 255, GelCategory = 'MA', GelName = 'white' }
+    local CTO = { R = 255, G = 210, B = 159, GelCategory = "Cinegel", GelName = "Roscosun 1/2 CTO" }
+    local CTB = { R = 173, G = 255, B = 246, GelCategory = "Cinegel", GelName = "Half Blue CTB" }
+    local Red = { R = 255, G = 0, B = 0, GelCategory = "MA", GelName = "red" }
+    local Orange = { R = 255, G = 127, B = 0, GelCategory = "MA", GelName = "orange" }
+    local Yellow = { R = 255, G = 255, B = 0, GelCategory = "MA", GelName = "yellow" }
+    local FernGreen = { R = 0, G = 255, B = 0, GelCategory = "MA", GelName = "Fern Green" }
+    local Green = { R = 0, G = 127, B = 0, GelCategory = "MA", GelName = "Green" }
+    local SeaGreen = { R = 0, G = 255, B = 127, GelCategory = "MA", GelName = "Sea Green" }
+    local Cyan = { R = 0, G = 255, B = 255, GelCategory = "MA", GelName = "Cyan" }
+    local Lavender = { R = 127, G = 0, B = 255, GelCategory = "MA", GelName = "Lavender" }
+    local Blue = { R = 0, G = 0, B = 255, GelCategory = "MA", GelName = "Blue" }
+    local Violet = { R = 127, G = 0, B = 255, GelCategory = "MA", GelName = "Violet" }
+    local Magenta = { R = 255, G = 0, B = 255, GelCategory = "MA", GelName = "Magenta" }
+    local Pink = { R = 255, G = 0, B = 127, GelCategory = "MA", GelName = "Pink" }
 
-    Cmd('At Gel "Cinegel"."Roscosun 1/2 CTO"')
-    Cmd('Store Preset 4.2 /Overwrite')
-    Cmd('Label Preset 4.2 "CTO"')
-    Cmd('Assign Appearance "CTO" At Preset 4.2')
+    generateColorPreset('White', White, 1)
+    generateColorPreset('CTO', CTO, 2)
+    generateColorPreset('CTB', CTB, 3)
+    generateColorPreset('Red', Red, 4)
+    generateColorPreset('Orange', Orange, 5)
+    generateColorPreset('Yellow', Yellow, 6)
+    generateColorPreset('Fern Green', FernGreen, 7)
+    generateColorPreset('Green', Green, 8)
+    generateColorPreset('Sea Green', SeaGreen, 9)
+    generateColorPreset('Cyan', Cyan, 10)
+    generateColorPreset('Lavender', Lavender, 11)
+    generateColorPreset('Blue', Blue, 12)
+    generateColorPreset('Violet', Violet, 13)
+    generateColorPreset('Magenta', Magenta, 14)
+    generateColorPreset('Pink', Pink, 15)
 
-    Cmd('At Gel "Cinegel"."Half Blue CTB"')
-    Cmd('Store Preset 4.3 /Overwrite')
-    Cmd('Label Preset 4.3 "CTB"')
-    Cmd('Assign Appearance "CTB" At Preset 4.3')
+end
 
-    Cmd('At Gel "MA"."red"')
-    Cmd('Store Preset 4.4 /Overwrite')
-    Cmd('Label Preset 4.4 "Red"')
-    Cmd('Assign Appearance "Red" At Preset 4.4')
-
-    Cmd('At Gel "MA"."orange"')
-    Cmd('Store Preset 4.5 /Overwrite')
-    Cmd('Label Preset 4.5 "Orange"')
-    Cmd('Assign Appearance "Orange" At Preset 4.5')
-
-    Cmd('At Gel "MA"."yellow"')
-    Cmd('Store Preset 4.6 /Overwrite')
-    Cmd('Label Preset 4.6 "Yellow"')
-    Cmd('Assign Appearance "Yellow" At Preset 4.6')
-
-    Cmd('At Gel "MA"."Fern Green"')
-    Cmd('Store Preset 4.7 /Overwrite')
-    Cmd('Label Preset 4.7 "Fern Green"')
-    Cmd('Assign Appearance "Fern Green" At Preset 4.7')
-
-
-    Cmd('At Gel "MA"."Green"')
-    Cmd('Store Preset 4.8 /Overwrite')
-    Cmd('Label Preset 4.8 "Green"')
-    Cmd('Assign Appearance "Green" At Preset 4.8')
-
-    Cmd('At Gel "MA"."Sea Green"')
-    Cmd('Store Preset 4.9 /Overwrite')
-    Cmd('Label Preset 4.9 "Sea Green"')
-    Cmd('Assign Appearance "Sea Green" At Preset 4.9')
-
-    Cmd('At Gel "MA"."Cyan"')
-    Cmd('Store Preset 4.10 /Overwrite')
-    Cmd('Label Preset 4.10 "Cyan"')
-    Cmd('Assign Appearance "Cyan" At Preset 4.10')
-
-    Cmd('At Gel "MA"."Lavender"')
-    Cmd('Store Preset 4.11 /Overwrite')
-    Cmd('Label Preset 4.11 "Lavender"')
-    Cmd('Assign Appearance "Lavender" At Preset 4.11')
-
-    Cmd('At Gel "MA"."Blue"')
-    Cmd('Store Preset 4.12 /Overwrite')
-    Cmd('Label Preset 4.12 "Blue"')
-    Cmd('Assign Appearance "Blue" At Preset 4.12')
-
-    Cmd('At Gel "MA"."Violet"')
-    Cmd('Store Preset 4.13 /Overwrite')
-    Cmd('Label Preset 4.13 "Violet"')
-    Cmd('Assign Appearance "Violet" At Preset 4.13')
-
-    Cmd('At Gel "MA"."Magenta"')
-    Cmd('Store Preset 4.14 /Overwrite')
-    Cmd('Label Preset 4.14 "Magenta"')
-    Cmd('Assign Appearance "Magenta" At Preset 4.14')
-
-    Cmd('At Gel "MA"."Pink"')
-    Cmd('Store Preset 4.15 /Overwrite')
-    Cmd('Label Preset 4.15 "Pink"')
-    Cmd('Assign Appearance "Pink" At Preset 4.15')
+function generateColorPreset(label, data, i)
+    Cmd('At Gel "' .. data.GelCategory .. '."' .. data.GelName .. '"')
+    Cmd('Store Preset 4.' .. i .. ' /Overwrite')
+    Cmd('Label Preset 4.' .. i .. ' "' .. label .. '"')
+    Cmd('Assign Appearance "' .. label .. '" At Preset 4.' .. i)
 end
 
 function generateDimmerPresets()
@@ -107,37 +71,18 @@ function generateDimmerPresets()
     Cmd('Label Preset 1.5 "0%"')
 end
 
-
-
 function generateColorSequences()
     Cmd('ClearAll')
-    local colorList = {
-                'White',
-                'CTO',
-                'CTB',
-                'Red',
-                'Orange',
-                'Yellow',
-                'Fern Green',
-                'Green',
-                'Sea Green',
-                'Cyan',
-                'Lavender',
-                'Blue',
-                'Violet',
-                'Magenta',
-                'Pink'
-            }
     SeqNum = 3000
     for k = 1, 6, 1 do
         for i = 1, 15, 1 do
             local colorNum = i
-            Cmd('Group '.. k)
+            Cmd('Group ' .. k)
             SeqNum = SeqNum + 1
-            Cmd('At Preset 4.'..colorNum)
-            Cmd('Store Sequence '..k.. '/C')
-            Cmd('Label Sequence '..k..' \" "Colors L'..k..'"\"')
-            Cmd('Assign Sequence '..k.. ' At Page 1.40'..k..' /O')
+            Cmd('At Preset 4.' .. colorNum)
+            Cmd('Store Sequence ' .. k .. '/C')
+            Cmd('Label Sequence ' .. k .. ' \" "Colors L' .. k .. '"\"')
+            Cmd('Assign Sequence ' .. k .. ' At Page 1.40' .. k .. ' /O')
         end
 
     end
@@ -148,21 +93,21 @@ function generateDimmerSequences()
     SeqNum = 2000
     for k = 1, 6, 1 do
         SeqNum = SeqNum + 1
-        Cmd('Group '.. k)
+        Cmd('Group ' .. k)
         Cmd('At Preset 1.1')
-        Cmd('Delete Sequence '..SeqNum)
-        Cmd('Store Sequence '..SeqNum.. ' /O')
-        Cmd('Assign Sequence '..SeqNum.. ' At Page 1.20'..k..' /O')
-        Cmd('Label Sequence '..SeqNum..' \"Dim L\"'..k)
-        Cmd('Set Page 1.20'..k..' "Key" "Flash"')
+        Cmd('Delete Sequence ' .. SeqNum)
+        Cmd('Store Sequence ' .. SeqNum .. ' /O')
+        Cmd('Assign Sequence ' .. SeqNum .. ' At Page 1.20' .. k .. ' /O')
+        Cmd('Label Sequence ' .. SeqNum .. ' \"Dim L\"' .. k)
+        Cmd('Set Page 1.20' .. k .. ' "Key" "Flash"')
     end
 end
 
 function generatePositionsPresets()
     Cmd('ClearAll')
     for k = 1, 6, 1 do
-        Cmd('Group '.. k)
-        Cmd('Group '.. k+18)
+        Cmd('Group ' .. k)
+        Cmd('Group ' .. k + 18)
         Cmd('Attribute "Pan" At Absolute Physical 0')
         Cmd('Attribute "Tilt" At Absolute Physical -45')
         Cmd('Store Preset 2. "Straight" /Merge')
@@ -172,13 +117,13 @@ function generatePositionsPresets()
         Cmd('Store Preset 2. "Fan Out" /Merge')
 
         Cmd('ClearAll')
-        Cmd('Group '.. k+36) -- this is the group for the even
+        Cmd('Group ' .. k + 36) -- this is the group for the even
         Cmd('Attribute "Pan" At Absolute Physical -30')
-        Cmd('Group '.. k+54) -- this is the group for the odds
+        Cmd('Group ' .. k + 54) -- this is the group for the odds
         Cmd('Attribute "Pan" At Absolute Physical 30')
 
-        Cmd('Group '.. k)
-        Cmd('Group '.. k+18)
+        Cmd('Group ' .. k)
+        Cmd('Group ' .. k + 18)
         Cmd('Store Preset 2. "Cross" /Merge')
         Cmd('Attribute "Tilt" At Absolute Physical -95')
         Cmd('Attribute "Pan" At Preset 2. "Straight"')
@@ -213,7 +158,6 @@ function main()
 
     generateColorSequences()
     Cmd('blind off')
-    print('End of plugin')
 end
 
 return main

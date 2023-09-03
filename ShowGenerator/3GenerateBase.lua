@@ -24,7 +24,7 @@ function generateGroups()
     end
 end
 
-function generateApparences()
+function generateAppearances()
     local White = {R= 255, G= 255, B= 255, Gel= 'MA.white'}
     local CTO = {R= 255, G= 210, B= 159, Gel= "Cinegel.Roscosun 1/2 CTO"}
     local CTB = {R= 173, G= 255, B= 246, Gel= "Cinegel.Half Blue CTB"}
@@ -77,7 +77,7 @@ end
 
 function main()
     generateGroups()
-    generateApparences()
+    generateAppearances()
 end
 
 return main
