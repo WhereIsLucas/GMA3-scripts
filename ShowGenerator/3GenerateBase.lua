@@ -5,14 +5,7 @@ end
 
 
 function generateGroups()
-    local groupList = {
-    'L1',
-    'L2',
-    'L3',
-    'L4',
-    'L5',
-    'L6',
-    }
+    local groupList = {'L1','L2','L3','L4','L5','L6'}
 
     Cmd('ClearAll')
 
@@ -72,6 +65,14 @@ function generateColorAppearance(label, color, i)
     Cmd('Set Appearance '..100+i..' "BackG" '..color.G)
     Cmd('Set Appearance '..100+i..' "BackB" '..color.B)
     Cmd('Set Appearance '..100+i..' "BackAlpha" 255')
+
+    Cmd('Store Appearance '..200+i..' /Overwrite')
+    Cmd('Label Appearance '..200+i..' "'..label..' Active"')
+    Cmd('Set Appearance '..200+i..' "BackR" '..color.R)
+    Cmd('Set Appearance '..200+i..' "BackG" '..color.G)
+    Cmd('Set Appearance '..200+i..' "BackB" '..color.B)
+    Cmd('Set Appearance '..200+i..' "BackAlpha" 255')
+    Cmd('Set Appearance '..200+i..' "Image" "Symbols.SymbolImage 4"')
 end
 
 function main()
