@@ -82,7 +82,7 @@ function generateColorSequences()
             SeqNum = SeqNum + 1
             Cmd('At Preset 4.' .. colorNum)
             Cmd('Store Sequence ' .. k .. '/C')
-            Cmd('Label Sequence ' .. k .. ' \" "Colors L' .. k .. '"\"')
+            Cmd('Label Sequence ' .. k .. '"Colors L' .. k .. '"')
             Cmd('Assign Sequence ' .. k .. ' At Page 1.40' .. k .. ' /O')
         end
 
