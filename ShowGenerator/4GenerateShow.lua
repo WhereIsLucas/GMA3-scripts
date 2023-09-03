@@ -31,46 +31,58 @@ function generateColorPresets()
     Cmd('At Gel "MA"."orange"')
     Cmd('Store Preset 4.5 /Overwrite')
     Cmd('Label Preset 4.5 "Orange"')
+    Cmd('Assign Appearance "Orange" At Preset 4.5')
 
     Cmd('At Gel "MA"."yellow"')
     Cmd('Store Preset 4.6 /Overwrite')
     Cmd('Label Preset 4.6 "Yellow"')
+    Cmd('Assign Appearance "Yellow" At Preset 4.6')
 
     Cmd('At Gel "MA"."Fern Green"')
     Cmd('Store Preset 4.7 /Overwrite')
     Cmd('Label Preset 4.7 "Fern Green"')
+    Cmd('Assign Appearance "Fern Green" At Preset 4.7')
+
 
     Cmd('At Gel "MA"."Green"')
     Cmd('Store Preset 4.8 /Overwrite')
     Cmd('Label Preset 4.8 "Green"')
+    Cmd('Assign Appearance "Green" At Preset 4.8')
 
     Cmd('At Gel "MA"."Sea Green"')
     Cmd('Store Preset 4.9 /Overwrite')
     Cmd('Label Preset 4.9 "Sea Green"')
+    Cmd('Assign Appearance "Sea Green" At Preset 4.9')
 
     Cmd('At Gel "MA"."Cyan"')
     Cmd('Store Preset 4.10 /Overwrite')
     Cmd('Label Preset 4.10 "Cyan"')
+    Cmd('Assign Appearance "Cyan" At Preset 4.10')
 
     Cmd('At Gel "MA"."Lavender"')
     Cmd('Store Preset 4.11 /Overwrite')
     Cmd('Label Preset 4.11 "Lavender"')
+    Cmd('Assign Appearance "Lavender" At Preset 4.11')
 
     Cmd('At Gel "MA"."Blue"')
     Cmd('Store Preset 4.12 /Overwrite')
     Cmd('Label Preset 4.12 "Blue"')
+    Cmd('Assign Appearance "Blue" At Preset 4.12')
 
     Cmd('At Gel "MA"."Violet"')
     Cmd('Store Preset 4.13 /Overwrite')
     Cmd('Label Preset 4.13 "Violet"')
+    Cmd('Assign Appearance "Violet" At Preset 4.13')
 
     Cmd('At Gel "MA"."Magenta"')
     Cmd('Store Preset 4.14 /Overwrite')
     Cmd('Label Preset 4.14 "Magenta"')
+    Cmd('Assign Appearance "Magenta" At Preset 4.14')
 
     Cmd('At Gel "MA"."Pink"')
     Cmd('Store Preset 4.15 /Overwrite')
     Cmd('Label Preset 4.15 "Pink"')
+    Cmd('Assign Appearance "Pink" At Preset 4.15')
 end
 
 function generateDimmerPresets()
