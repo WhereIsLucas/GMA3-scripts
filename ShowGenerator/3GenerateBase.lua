@@ -72,23 +72,11 @@ function generateColorAppearance(label, color, i)
     Cmd('Set Appearance '..200+i..' "BackG" '..color.G)
     Cmd('Set Appearance '..200+i..' "BackB" '..color.B)
     Cmd('Set Appearance '..200+i..' "BackAlpha" 255')
-    --Cmd('Set Appearance '..200+i..' "Image" "Symbols 101"')
 end
-
-function generateSymbols()
-    local xMarkWhite = {FileName= "x_mark_white.png", filePath= "symbols")
-    generateSymbol('X Mark White', xMarkWhite, 101)
-end
-
-
-function generateSymbol(label, data, i)
-end
-
 
 
 function main()
     generateGroups()
-    generateSymbols()
     generateApparences()
 end
 

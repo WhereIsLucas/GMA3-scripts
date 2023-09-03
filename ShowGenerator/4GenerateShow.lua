@@ -12,7 +12,6 @@ function generateColorPresets()
     Cmd('Label Preset 4.1 "White"')
     Cmd('Assign Appearance "White" At Preset 4.1')
 
-
     Cmd('At Gel "Cinegel"."Roscosun 1/2 CTO"')
     Cmd('Store Preset 4.2 /Overwrite')
     Cmd('Label Preset 4.2 "CTO"')
@@ -138,6 +137,7 @@ function generateColorSequences()
             Cmd('At Preset 4.'..colorNum)
             Cmd('Store Sequence '..k.. '/C')
             Cmd('Label Sequence '..k..' \"'..colorList[i]..'\"')
+            Cmd('Assign Sequence '..k.. ' At Page 1.40'..k..' /O')
         end
 
     end
@@ -154,7 +154,7 @@ function generateDimmerSequences()
         Cmd('Store Sequence '..SeqNum.. ' /O')
         Cmd('Assign Sequence '..SeqNum.. ' At Page 1.20'..k..' /O')
         Cmd('Label Sequence '..SeqNum..' \"Dim Group\"')
-        Cmd('Edit Page 1.20'..k..' At Flash')
+        --Cmd('Edit Page 1.20'..k..' At Flash')
     end
 end
 
@@ -178,6 +178,7 @@ function generatePositionsPresets()
         Cmd('Attribute "Pan" At Absolute Physical 30')
 
         Cmd('Group '.. k)
+        Cmd('Group '.. k+18)
         Cmd('Store Preset 2. "Cross" /Merge')
         Cmd('Attribute "Tilt" At Absolute Physical -95')
         Cmd('Attribute "Pan" At Preset 2. "Straight"')
