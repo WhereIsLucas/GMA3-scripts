@@ -34,12 +34,14 @@ end
 function generateApparences()
     local colorList = {
                 {
-                    'Name': 'White',
-                    'R': 255,
-                    'G': 255,
-                    'B': 255,
-                    'Gel'
+                    'Name': 'White', 'R': 255, 'G': 255, 'B': 255, 'Gel': 'MA.white',
                 },
+                {
+                    "Name": "CTO", "R": 255, "G": 180, "B": 0, "Gel": "Cinegel.Roscosun 1/2 CTO",
+                },
+                {
+                    "Name": "CTB", "R": 0, "G": 0, "B": 255, "Gel": "Cinegel.Half Blue CTB",
+                }
             }
     for i, color in ipairs(colorList) do
         Cmd('Store Appearance '..100+i..' /Overwrite')
