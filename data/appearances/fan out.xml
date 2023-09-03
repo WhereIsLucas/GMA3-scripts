@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Fan Out" Guid="0D 49 20 00 5F 63 40 21 7E 8A A4 4A FC 58 B2 14" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/pos_fan_out_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[pos_fan_out_white_png]&apos;" AddressNum="13.2.2.625">
+                <SymbolImage Name="[pos_fan_out_white_png]" Guid="0D 49 20 00 4B CF 57 77 C9 03 BC 45 FC 58 B2 14" FileName="pos_fan_out_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

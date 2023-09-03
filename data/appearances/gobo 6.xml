@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Gobo 6" Guid="0D 49 20 00 44 78 F5 04 1C E4 06 CB 0B 59 B2 14" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/number_6_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[number_6_white_png]&apos;" AddressNum="13.2.2.559">
+                <SymbolImage Name="[number_6_white_png]" Guid="0D 49 20 00 7F DF A1 73 67 5D 1E C6 04 59 B2 14" FileName="number_6_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

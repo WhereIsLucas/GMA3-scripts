@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Position Phaser Tilt Sin Active" Guid="50 AB F9 0D 2E 81 26 71 28 0D 93 78 78 D7 B6 AD" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/center_out_90_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[center_out_90_black_png]&apos;" AddressNum="13.2.2.950">
+                <SymbolImage Name="[center_out_90_black_png]" Guid="50 AB F9 0D 44 20 DE 6F 7C 20 3D 8C 3C 0E 8C A2" FileName="center_out_90_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

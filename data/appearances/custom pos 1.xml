@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Custom Pos 1" Guid="0D 49 20 00 33 D2 D3 6F 91 BD CF 95 6A 59 B2 14" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/number_1_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[number_1_white_png]&apos;" AddressNum="13.2.2.544">
+                <SymbolImage Name="[number_1_white_png]" Guid="0D 49 20 00 C6 CA C7 52 79 98 35 F7 F3 58 B2 14" FileName="number_1_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

@@ -10,18 +10,23 @@ function generateColorPresets()
     Cmd('At Gel "MA"."white"')
     Cmd('Store Preset 4.1 /Overwrite')
     Cmd('Label Preset 4.1 "White"')
+    Cmd('Assign Appearance "White" At Preset 4.1')
+
 
     Cmd('At Gel "Cinegel"."Roscosun 1/2 CTO"')
     Cmd('Store Preset 4.2 /Overwrite')
     Cmd('Label Preset 4.2 "CTO"')
+    Cmd('Assign Appearance "CTO" At Preset 4.2')
 
     Cmd('At Gel "Cinegel"."Half Blue CTB"')
     Cmd('Store Preset 4.3 /Overwrite')
     Cmd('Label Preset 4.3 "CTB"')
+    Cmd('Assign Appearance "CTB" At Preset 4.3')
 
     Cmd('At Gel "MA"."red"')
     Cmd('Store Preset 4.4 /Overwrite')
     Cmd('Label Preset 4.4 "Red"')
+    Cmd('Assign Appearance "Red" At Preset 4.4')
 
     Cmd('At Gel "MA"."orange"')
     Cmd('Store Preset 4.5 /Overwrite')
@@ -119,10 +124,10 @@ function generateColorSequences()
             Cmd('Group '.. k)
             SeqNum = SeqNum + 1
             Cmd('At Preset 4.'..colorNum)
-
             Cmd('Store Sequence '..k.. '/C')
             Cmd('Label Sequence '..k..' \"'..colorList[i]..'\"')
         end
+
     end
 end
 
@@ -154,9 +159,10 @@ function generatePositionsPresets()
         Cmd('Attribute "Pan" At Absolute Physical -30 Thru 30')
         Cmd('Store Preset 2. "Fan Out" /Merge')
 
-        Cmd('Group '.. k+36)
+        Cmd('ClearAll')
+        Cmd('Group '.. k+36) -- this is the group for the even
         Cmd('Attribute "Pan" At Absolute Physical -30')
-        Cmd('Group '.. k+72)
+        Cmd('Group '.. k+54) -- this is the group for the odds
         Cmd('Attribute "Pan" At Absolute Physical 30')
 
         Cmd('Group '.. k)
@@ -186,7 +192,7 @@ function main()
     generateDimmerPresets()
     generateDimmerSequences()
 
-    Cmd('Set Preset 2 Property "PresetMode" "Universal"')
+    Cmd('Set Preset 2 Property "PresetMode" "Selective"')
     generatePositionsPresets()
 
     Cmd('Set Preset 4 Property "PresetMode" "Universal"')

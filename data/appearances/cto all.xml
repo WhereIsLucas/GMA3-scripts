@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="CTO All" Guid="0D 49 20 00 17 95 0B 25 D0 9F 99 47 30 74 D3 B1" Color="0.000000,0.000000,0.000000,1.000000" ImageMode="Crop" BackR="255" BackG="210" BackB="159" BackAlpha="255" MediaFileName="SYMBOL/symbols/arrow_down.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[arrow_down_png]&apos;" AddressNum="13.2.2.719">
+                <SymbolImage Name="[arrow_down_png]" Guid="0D 49 20 00 28 6B E9 47 6E E9 FB C7 88 AD D1 B9" FileName="arrow_down.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

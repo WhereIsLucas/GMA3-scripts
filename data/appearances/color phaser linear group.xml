@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Color Phaser Linear Group" Guid="0D 49 20 00 1D 35 11 4E FC 27 3B 07 92 7B EB 36" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/exec_10x_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[exec_10x_white_png]&apos;" AddressNum="13.2.2.956">
+                <SymbolImage Name="[exec_10x_white_png]" Guid="50 AB F9 0D C2 B2 96 5F 02 FA B9 F9 53 47 DC E2" FileName="exec_10x_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

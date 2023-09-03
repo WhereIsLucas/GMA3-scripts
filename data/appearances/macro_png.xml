@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="macro_png" Guid="0D 49 20 00 99 DC 36 78 5B F4 8F 02 70 59 B2 14" Color="1.000000,1.000000,1.000000,0.329412" MediaFileName="SYMBOL/object/macro.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[macro_png]&apos;" AddressNum="13.2.2.173">
+                <SymbolImage Name="[macro_png]" Guid="0D 49 20 00 A5 E5 AA 27 14 A2 F6 05 A6 EA 94 07" FileName="macro.png" FilePath="object" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

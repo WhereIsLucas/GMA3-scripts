@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Fx Pos Active" Guid="0D 49 20 00 2D 80 B2 57 FB C2 9E 9F 68 59 B2 14" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/ctrl_fx_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[ctrl_fx_black_png]&apos;" AddressNum="13.2.2.375">
+                <SymbolImage Name="[ctrl_fx_black_png]" Guid="50 AB F9 0D 15 99 B1 61 94 E2 8B B6 9F 89 0A 95" FileName="ctrl_fx_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

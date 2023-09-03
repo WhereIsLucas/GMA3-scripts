@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Master" Guid="0D 49 20 00 BC D5 97 51 B7 ED C3 D9 AE EA 94 07" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/object/master1.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[master1_png]&apos;" AddressNum="13.2.2.20">
+                <SymbolImage Name="[master1_png]" Guid="0D 49 20 00 75 A6 36 7C 02 67 DB D4 AD EA 94 07" FileName="master1.png" FilePath="object" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

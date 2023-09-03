@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Straight Active" Guid="0D 49 20 00 01 27 85 6F B5 3B F0 F7 59 59 B2 14" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/pos_straight_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[pos_straight_black_png]&apos;" AddressNum="13.2.2.627">
+                <SymbolImage Name="[pos_straight_black_png]" Guid="0D 49 20 00 15 33 92 22 00 BD 09 F3 58 59 B2 14" FileName="pos_straight_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

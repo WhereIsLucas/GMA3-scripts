@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Up Fan In" Guid="0D 49 20 00 B7 5B 68 11 40 62 2B 2D F9 58 B2 14" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/pos_up_fan_in_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[pos_up_fan_in_white_png]&apos;" AddressNum="13.2.2.637">
+                <SymbolImage Name="[pos_up_fan_in_white_png]" Guid="0D 49 20 00 F9 43 7B 6F 8B DB 40 28 FA 58 B2 14" FileName="pos_up_fan_in_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

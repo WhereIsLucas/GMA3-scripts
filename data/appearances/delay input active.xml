@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Delay INPUT Active" Guid="0D 49 20 00 3C 41 A8 18 9C A6 81 E8 38 3B F3 E6" Color="1.000000,0.500000,0.000000,1.000000" MediaFileName="SYMBOL/symbols/calculator_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[calculator_black_png]&apos;" AddressNum="13.2.2.570">
+                <SymbolImage Name="[calculator_black_png]" Guid="50 AB F9 0D 03 8B E5 6D F1 5B A8 F4 E9 1C 49 D2" FileName="calculator_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

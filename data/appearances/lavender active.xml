@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Lavender Active" Guid="0D 49 20 00 CD 81 1C 21 31 94 DE 32 16 59 B2 14" Color="0.000000,0.545098,1.000000,1.000000" BackG="139" BackB="255" BackAlpha="255" MediaFileName="SYMBOL/symbols/x_mark_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[x_mark_white_png]&apos;" AddressNum="13.2.2.718">
+                <SymbolImage Name="[x_mark_white_png]" Guid="0D 49 20 00 53 21 A5 22 0A 99 EB 99 03 59 B2 14" FileName="x_mark_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

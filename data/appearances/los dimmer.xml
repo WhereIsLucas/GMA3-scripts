@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Los Dimmer" Guid="75 7A 1D 57 40 B7 80 18 F6 E8 C1 F7 D6 00 F9 6A" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/lightbulb_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[lightbulb_white_png]&apos;" AddressNum="13.2.2.478">
+                <SymbolImage Name="[lightbulb_white_png]" Guid="0D 49 20 00 CC 3C FA 3E 4D B3 D7 0A F7 58 B2 14" FileName="lightbulb_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

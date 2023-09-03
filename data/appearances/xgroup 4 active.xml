@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="XGroup 4 Active" Guid="0D 49 20 00 AB CF 84 5C 98 06 30 80 9C DA 95 CD" Color="1.000000,0.000000,0.000000,1.000000" MediaFileName="SYMBOL/symbols/number_4_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[number_4_black_png]&apos;" AddressNum="13.2.2.552">
+                <SymbolImage Name="[number_4_black_png]" Guid="0D 49 20 00 78 32 CF 55 CA EB C9 5F 61 59 B2 14" FileName="number_4_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Position Phaser Circle" Guid="50 AB F9 0D 6C 40 D6 56 43 EA 30 C2 14 94 B5 BC" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/outline_circle_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[outline_circle_white_png]&apos;" AddressNum="13.2.2.947">
+                <SymbolImage Name="[outline_circle_white_png]" Guid="DC 22 A1 9F 89 07 10 02 57 8A 3E 00 E7 D8 74 FB" FileName="outline_circle_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

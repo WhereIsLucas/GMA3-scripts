@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Color Phaser Grid Active" Guid="0D 49 20 00 DF 51 AA 5B 47 99 50 02 93 7B EB 36" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/3d_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[3d_black_png]&apos;" AddressNum="13.2.2.957">
+                <SymbolImage Name="[3d_black_png]" Guid="50 AB F9 0D 2A 1E 6D 76 F9 58 37 E1 34 69 AA EE" FileName="3d_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

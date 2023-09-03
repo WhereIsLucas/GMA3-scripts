@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Up Straight" Guid="0D 49 20 00 7D 2E D0 1C AA 77 FA 36 FF 58 B2 14" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/pos_up_straight_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[pos_up_straight_white_png]&apos;" AddressNum="13.2.2.643">
+                <SymbolImage Name="[pos_up_straight_white_png]" Guid="0D 49 20 00 BC 8B 54 5D F5 E8 13 32 F8 58 B2 14" FileName="pos_up_straight_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

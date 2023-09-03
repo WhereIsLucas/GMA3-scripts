@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Los Pos Active" Guid="75 7A 1D 57 8E C9 80 18 D0 EB 4D 2D 7C DB 11 1D" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/exec_10x_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[exec_10x_black_png]&apos;" AddressNum="13.2.2.955">
+                <SymbolImage Name="[exec_10x_black_png]" Guid="50 AB F9 0D 4B 13 2A 55 21 96 73 08 E8 17 99 E3" FileName="exec_10x_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Dimmer Phaser XGroup 4" Guid="0D 49 20 01 C8 5F 67 71 53 02 E3 C5 0B DD BC 5C" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/number_4_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[number_4_white_png]&apos;" AddressNum="13.2.2.553">
+                <SymbolImage Name="[number_4_white_png]" Guid="0D 49 20 00 A9 ED B7 3B 3B 70 B8 D9 09 59 B2 14" FileName="number_4_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

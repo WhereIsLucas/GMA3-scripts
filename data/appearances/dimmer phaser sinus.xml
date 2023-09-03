@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Dimmer Phaser Sinus" Guid="0D 49 20 01 19 68 90 78 65 4D FE F6 16 DD BC 5C" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/sine_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[sine_white_png]&apos;" AddressNum="13.2.2.937">
+                <SymbolImage Name="[sine_white_png]" Guid="DC 22 A1 9F 52 68 10 02 70 9D AE E1 58 82 2B 1D" FileName="sine_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

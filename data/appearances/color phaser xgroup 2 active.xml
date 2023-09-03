@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Color Phaser XGroup 2 Active" Guid="0D 49 20 00 5C FE 83 07 30 6C CA 7D 81 7B EB 36" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/number_2_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[number_2_black_png]&apos;" AddressNum="13.2.2.546">
+                <SymbolImage Name="[number_2_black_png]" Guid="0D 49 20 00 94 50 09 6C 08 1C 45 7D 65 59 B2 14" FileName="number_2_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

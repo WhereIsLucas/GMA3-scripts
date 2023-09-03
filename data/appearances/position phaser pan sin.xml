@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Position Phaser Pan Sin" Guid="50 AB F9 0D D3 99 B6 73 4B 49 6C 4C ED DC 31 94" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/center_out_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[center_out_white_png]&apos;" AddressNum="13.2.2.953">
+                <SymbolImage Name="[center_out_white_png]" Guid="50 AB F9 0D A2 6B 72 44 35 5E 3F 56 BE C4 E4 AA" FileName="center_out_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

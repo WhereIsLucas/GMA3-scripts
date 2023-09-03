@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Sound" Guid="0D 49 20 00 87 CF B7 46 4D D8 F0 CF AC EA 94 07" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/object/sound1.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[sound1_png]&apos;" AddressNum="13.2.2.21">
+                <SymbolImage Name="[sound1_png]" Guid="0D 49 20 00 AF 6C 31 3A 98 51 08 CB AB EA 94 07" FileName="sound1.png" FilePath="object" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

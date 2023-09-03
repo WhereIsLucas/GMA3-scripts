@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Delay 0 Active" Guid="0D 49 20 00 38 BC 54 0A 70 B9 23 FC 75 4B D1 E6" Color="1.000000,0.500000,0.000000,1.000000" MediaFileName="SYMBOL/symbols/number_0_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[number_0_black_png]&apos;" AddressNum="13.2.2.540">
+                <SymbolImage Name="[number_0_black_png]" Guid="50 AB F9 0D 6B 4C 96 0E 17 AA 91 61 4D 0F 1D 30" FileName="number_0_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Los Pos Up Active" Guid="75 7A 1D 57 71 D8 80 18 9B 52 56 30 67 DB 11 1D" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/pos_up_straight_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[pos_up_straight_black_png]&apos;" AddressNum="13.2.2.642">
+                <SymbolImage Name="[pos_up_straight_black_png]" Guid="0D 49 20 00 CB BE C0 7C 58 87 CD CB 51 59 B2 14" FileName="pos_up_straight_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

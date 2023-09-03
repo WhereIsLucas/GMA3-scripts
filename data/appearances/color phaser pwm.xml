@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Color Phaser PWM" Guid="0D 49 20 00 93 03 33 41 EA E4 2D D6 8F 7B EB 36" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/pwm_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[pwm_white_png]&apos;" AddressNum="13.2.2.943">
+                <SymbolImage Name="[pwm_white_png]" Guid="DC 22 A1 9F 99 78 10 02 BE 47 E9 76 66 29 4F 33" FileName="pwm_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

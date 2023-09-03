@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Sequence" Guid="0D 49 20 00 2C 50 69 5E 21 F3 92 E3 AF EA 94 07" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/object/sequence.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[sequence_png]&apos;" AddressNum="13.2.2.19">
+                <SymbolImage Name="[sequence_png]" Guid="0D 49 20 00 EE 21 2E 51 6C 74 AA DE AF EA 94 07" FileName="sequence.png" FilePath="object" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

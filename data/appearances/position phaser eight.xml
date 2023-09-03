@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Position Phaser Eight" Guid="50 AB F9 0D 53 EB EE 7D 1B BC F4 9A A8 56 16 A1" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/infinity_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[infinity_white_png]&apos;" AddressNum="13.2.2.949">
+                <SymbolImage Name="[infinity_white_png]" Guid="DC 22 A1 9F 88 08 10 02 37 7B D5 72 94 7F 3D 13" FileName="infinity_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

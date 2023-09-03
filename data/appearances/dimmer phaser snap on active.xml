@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Dimmer Phaser Snap On Active" Guid="0D 49 20 01 C8 C0 E2 7C B0 C6 17 F2 16 DD BC 5C" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/snapin_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[snapin_black_png]&apos;" AddressNum="13.2.2.938">
+                <SymbolImage Name="[snapin_black_png]" Guid="DC 22 A1 9F D9 41 10 02 7D 22 15 86 06 CF 68 06" FileName="snapin_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

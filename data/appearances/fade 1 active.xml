@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Fade 1 Active" Guid="0D 49 20 00 57 4A 47 79 F9 5A B4 14 F9 72 FF E1" Color="0.000000,1.000000,0.000000,1.000000" MediaFileName="SYMBOL/symbols/number_1_black.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[number_1_black_png]&apos;" AddressNum="13.2.2.543">
+                <SymbolImage Name="[number_1_black_png]" Guid="0D 49 20 00 4F B0 F1 6F 27 A8 FC 8B 65 59 B2 14" FileName="number_1_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

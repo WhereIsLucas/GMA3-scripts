@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Los Iris Closed" Guid="75 7A 1D 57 1B E6 80 08 3B 48 41 8B 42 76 FC 24" Color="1.000000,1.000000,1.000000,0.260000" MediaFileName="SYMBOL/symbols/outline_point.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[outline_point_png]&apos;" AddressNum="13.2.2.581">
+                <SymbolImage Name="[outline_point_png]" Guid="0D 49 20 00 1A 9C 70 71 93 3A 7C B2 07 59 B2 14" FileName="outline_point.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Release Active" Guid="0D 49 20 00 B9 8C 25 2F 42 64 6E 97 7D 22 12 C5" Color="1.000000,1.000000,1.000000,1.000000" BackR="255" BackG="255" BackB="255" BackAlpha="255" MediaFileName="SYMBOL/symbols/x_mark_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[x_mark_white_png]&apos;" AddressNum="13.2.2.718">
+                <SymbolImage Name="[x_mark_white_png]" Guid="0D 49 20 00 53 21 A5 22 0A 99 EB 99 03 59 B2 14" FileName="x_mark_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

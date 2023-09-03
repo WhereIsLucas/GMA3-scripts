@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="Zoom Mid" Guid="0D 49 20 00 D4 D5 7C 01 99 1C FB 1F 77 59 B2 14" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/search_black.png" ImageMirror="Horizontal" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[search_black_png]&apos;" AddressNum="13.2.2.672">
+                <SymbolImage Name="[search_black_png]" Guid="0D 49 20 00 E7 69 69 29 E4 95 10 1B 74 59 B2 14" FileName="search_black.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="ScreenConfig" Guid="0D 49 20 00 B9 15 7D 79 79 C5 56 BC A9 EA 94 07" Color="1.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/object/scrnconfig1.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[scrnconfig1_png]&apos;" AddressNum="13.2.2.27">
+                <SymbolImage Name="[scrnconfig1_png]" Guid="0D 49 20 00 9A AA B8 5E C4 3E 6E B7 A8 EA 94 07" FileName="scrnconfig1.png" FilePath="object" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>

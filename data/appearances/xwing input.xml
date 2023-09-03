@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.3">
+    <Appearance Name="XWing INPUT" Guid="50 AB F9 0D 11 56 3D 54 25 90 71 0E D5 99 BD 96" Color="0.000000,1.000000,1.000000,1.000000" MediaFileName="SYMBOL/symbols/calculator_white.png" CreatedBy="Unknown">
+        <DependencyExport Size="1">
+            <Dependency Address="&apos;ShowData&apos;.&apos;MediaPools&apos;.&apos;Symbols&apos;.&apos;[calculator_white_png]&apos;" AddressNum="13.2.2.571">
+                <SymbolImage Name="[calculator_white_png]" Guid="50 AB F9 0D 11 32 D2 0E 90 F7 63 03 0B 9E C9 D0" FileName="calculator_white.png" FilePath="symbols" ColorKeyLightFrom="FFFFFFFF" ColorKeyLightTo="FFFFFFFF" ColorKeySelectionFrom="FFFFFFFF" ColorKeySelectionTo="FFFFFFFF" />
+            </Dependency>
+        </DependencyExport>
+    </Appearance>
+</GMA3>
