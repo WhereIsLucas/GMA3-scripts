@@ -72,7 +72,6 @@ function generateColorAppearance(label, color, i)
     Cmd('Set Appearance '..200+i..' "BackG" '..color.G)
     Cmd('Set Appearance '..200+i..' "BackB" '..color.B)
     Cmd('Set Appearance '..200+i..' "BackAlpha" 255')
-    Cmd('Set Appearance '..200+i..' "Image" "Symbols.SymbolImage 4"')
 end
 
 function main()
