@@ -136,7 +136,7 @@ function generateColorSequences()
             SeqNum = SeqNum + 1
             Cmd('At Preset 4.'..colorNum)
             Cmd('Store Sequence '..k.. '/C')
-            Cmd('Label Sequence '..k..' \"'..colorList[i]..'\"')
+            Cmd('Label Sequence '..k..' \" "Colors L'..k..'"\"')
             Cmd('Assign Sequence '..k.. ' At Page 1.40'..k..' /O')
         end
 
@@ -153,8 +153,8 @@ function generateDimmerSequences()
         Cmd('Delete Sequence '..SeqNum)
         Cmd('Store Sequence '..SeqNum.. ' /O')
         Cmd('Assign Sequence '..SeqNum.. ' At Page 1.20'..k..' /O')
-        Cmd('Label Sequence '..SeqNum..' \"Dim Group\"')
-        --Cmd('Edit Page 1.20'..k..' At Flash')
+        Cmd('Label Sequence '..SeqNum..' \"Dim L\"'..k)
+        Cmd('Set Page 1.20'..k..' "Key" "Flash"')
     end
 end
 
