@@ -60,16 +60,16 @@ end
 function generateColorSequences()
     Cmd('ClearAll')
 
-    local SingleSeqNum = 1000
+    local SingleSeqNum = 4000
     for k = 1, 6, 1 do
-        Cmd('Delete Sequence ' .. 100+k .. '/C')
+        Cmd('Delete Sequence ' .. 4000+k .. '/C')
         for i, color in ipairs(colors) do
             Cmd('ClearAll')
             Cmd('Group ' .. k)
             Cmd('At Preset 4.' .. color.id)
-            Cmd('Store Sequence ' .. 100+k .. '/C')
-            Cmd('Label Sequence ' .. 100+k .. ' "Colors L' .. k..'"')
-            Cmd('Assign Sequence ' .. 100+k .. ' At Page 1.30' .. k .. ' /O')
+            Cmd('Store Sequence ' .. 4000+k .. '/C')
+            Cmd('Label Sequence ' .. 4000+k .. ' "Colors L' .. k..'"')
+            Cmd('Assign Sequence ' .. 4000+k .. ' At Page 1.30' .. k .. ' /O')
 
             Cmd('ClearAll')
             Cmd('Group ' .. k)
@@ -77,7 +77,7 @@ function generateColorSequences()
             Cmd('Delete Sequence ' .. SingleSeqNum)
             Cmd('Store Sequence ' .. SingleSeqNum .. '/C')
             Cmd('Label Sequence ' .. SingleSeqNum .. ' \"L'.. k ..' '.. color.Name..'\"')
-            Cmd('Assign Appearance ' .. 100 + color.id .. ' At Sequence ' .. SingleSeqNum .. ' /O')
+            Cmd('Assign Appearance ' .. 400 + color.id .. ' At Sequence ' .. SingleSeqNum .. ' /O')
             SingleSeqNum = SingleSeqNum + 1
         end
     end
@@ -87,12 +87,13 @@ function generateAllColorMacros()
     Cmd('ClearAll')
     for i, color in ipairs(colors) do
         Cmd('ChangeDestination Macro')
-        Cmd('Store ' .. 100 + color.id .. ' /Overwrite')
-        Cmd('ChangeDestination '..100+color.id)
-        Cmd('Label Macro ' .. 100 + color.id .. ' "All ' .. color.Name..'"')
+        Cmd('Store ' .. 400 + color.id .. ' /Overwrite')
+        Cmd('ChangeDestination '..400+color.id)
+        Cmd('Label Macro ' .. 400 + color.id .. ' "All ' .. color.Name..'"')
         for k = 1, 6, 1 do
             Cmd('Insert')
             Cmd('Set '..k..' Property "Command" ' .. '"Go+ Sequence \'L' .. k .. ' ' .. color.Name .. '\'')
+            Cmd('Assign Appearance ' .. 400 + color.id .. ' At Macro ' .. 100+color.id .. ' /O')
         end
         Cmd('ChangeDestination Root')
     end
@@ -101,7 +102,7 @@ end
 
 function generateDimmerSequences()
     Cmd('ClearAll')
-    local SeqNum = 2000
+    local SeqNum = 1
     for k = 1, 6, 1 do
         SeqNum = SeqNum + 1
         Cmd('Group ' .. k)
@@ -113,8 +114,7 @@ function generateDimmerSequences()
         Cmd('Label Sequence ' .. SeqNum .. ' \"Dim L\"' .. k)
         Cmd('Set Page 1.10' .. k .. ' "Key" "Flash"')
         Cmd('Set Page 1.20' .. k .. ' "Key" "Temp"')
-        Cmd('Set Page 1.20' .. k .. ' "Key" "Temp"')
-
+        Cmd('Set Page 1.20' .. k .. ' "Fader" "Temp"')
     end
 end
 
@@ -162,7 +162,6 @@ end
 
 function generatePositionsSequences()
     Cmd('ClearAll')
-
     local SingleSeqNum = 2000
     for k = 1, 6, 1 do
         for i, position in ipairs(positions) do
@@ -172,7 +171,7 @@ function generatePositionsSequences()
             Cmd('Delete Sequence ' .. SingleSeqNum)
             Cmd('Store Sequence ' .. SingleSeqNum .. '/O')
             Cmd('Label Sequence ' .. SingleSeqNum .. ' \"L'.. k ..' '.. position.Name ..'\"')
-            Cmd('Assign Appearance ' .. 1100 + position.id .. ' At Sequence ' .. SingleSeqNum .. ' /O')
+            Cmd('Assign Appearance ' .. 200 + position.id .. ' At Sequence ' .. SingleSeqNum .. ' /O')
             SingleSeqNum = SingleSeqNum + 1
         end
     end
