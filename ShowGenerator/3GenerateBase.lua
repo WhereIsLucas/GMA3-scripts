@@ -44,6 +44,20 @@ function generateAppearances()
     local Magenta = { id = 14, R = 255, G = 0, B = 255, GelCategory = "MA", GelName = "Magenta" }
     local Pink = { id = 15, R = 255, G = 0, B = 127, GelCategory = "MA", GelName = "Pink" }
 
+    local Straight = { id = 1, Pan = 0, Tilt = 45, Name = 'Straight'}
+    local FanIn = { id = 2, Pan = 30, Tilt = 45, Name = 'Fan In'}
+    local FanOut = { id = 3, Pan = -30, Tilt = 45, Name = 'Fan Out'}
+    local Cross1 = { id = 4, Pan = 0, Tilt = 45, Name = 'Cross 1'}
+    local Cross2 = { id = 4, Pan = 0, Tilt = 45, Name = 'Cross 2'}
+    local Cross3 = { id = 4, Pan = 0, Tilt = 45, Name = 'Cross 3'}
+    local Blind = { id = 5, Pan = 0, Tilt = 60, Name = 'Blind'}
+    local Sky = { id = 6, Pan = 0, Tilt = 0, Name = 'Sky'}
+    local Custom1 = { id = 7, Pan = 0, Tilt = 0, Name = 'Custom 1'}
+    local Custom2 = { id = 8, Pan = 0, Tilt = 0, Name = 'Custom 2'}
+    local Custom3 = { id = 9, Pan = 0, Tilt = 0, Name = 'Custom 3'}
+
+    local positions = {Straight, FanIn, FanOut, Cross1, Cross2, Cross3, Blind, Sky, Custom1, Custom2, Custom3}
+
     generateColorAppearance('White', White)
     generateColorAppearance('CTO', CTO)
     generateColorAppearance('CTB', CTB)
@@ -59,6 +73,19 @@ function generateAppearances()
     generateColorAppearance('Violet', Violet)
     generateColorAppearance('Magenta', Magenta)
     generateColorAppearance('Pink', Pink)
+
+    generatePositionAppearance('Straight', Straight)
+    generatePositionAppearance('Fan In', FanIn)
+    generatePositionAppearance('Fan Out', FanOut)
+    generatePositionAppearance('Cross 1', Cross1)
+    generatePositionAppearance('Cross 2', Cross2)
+    generatePositionAppearance('Cross 3', Cross3)
+    generatePositionAppearance('Blind', Blind)
+    generatePositionAppearance('Sky', Sky)
+    generatePositionAppearance('Custom 1', Custom1)
+    generatePositionAppearance('Custom 2', Custom2)
+    generatePositionAppearance('Custom 3', Custom3)
+
 end
 
 function generateColorAppearance(label, data)
@@ -77,9 +104,18 @@ function generateColorAppearance(label, data)
     Cmd('Set Appearance '..200+data.id..' "BackAlpha" 255')
 end
 
+function generatePositionAppearance(label, data)
+    Cmd('Store Appearance '..1100+data.id..' /Overwrite')
+    Cmd('Label Appearance '..1100+data.id..' "'..label..'"')
+    Cmd('Set Appearance '..1100+data.id..' "BackAlpha" 255')
+
+    Cmd('Store Appearance '..1200+data.id..' /Overwrite')
+    Cmd('Label Appearance '..1200+data.id..' "'..label..' Active"')
+    Cmd('Set Appearance '..1200+data.id..' "BackAlpha" 255')
+end
 
 function main()
-    generateGroups()
+    --generateGroups()
     generateAppearances()
 end
 

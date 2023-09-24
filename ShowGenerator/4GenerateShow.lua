@@ -18,9 +18,19 @@ local colors = {White,CTO,CTB,Red,Orange,Yellow,FernGreen,Green,SeaGreen,Cyan,La
 
 local dimmerStops = {100, 75, 50, 25, 0}
 
-function print (msg)
-    Echo(msg)
-end
+local Straight = { id = 1, Pan = 0, Tilt = 45, Name = 'Straight'}
+local FanIn = { id = 2, Pan = 30, Tilt = 45, Name = 'Fan In'}
+local FanOut = { id = 3, Pan = -30, Tilt = 45, Name = 'Fan Out'}
+local Cross1 = { id = 4, Pan = 0, Tilt = 45, Name = 'Cross 1'}
+local Cross2 = { id = 4, Pan = 0, Tilt = 45, Name = 'Cross 2'}
+local Cross3 = { id = 4, Pan = 0, Tilt = 45, Name = 'Cross 3'}
+local Blind = { id = 5, Pan = 0, Tilt = 60, Name = 'Blind'}
+local Sky = { id = 6, Pan = 0, Tilt = 0, Name = 'Sky'}
+local Custom1 = { id = 7, Pan = 0, Tilt = 0, Name = 'Custom 1'}
+local Custom2 = { id = 8, Pan = 0, Tilt = 0, Name = 'Custom 2'}
+local Custom3 = { id = 9, Pan = 0, Tilt = 0, Name = 'Custom 3'}
+
+local positions = {Straight, FanIn, FanOut, Cross1, Cross2, Cross3, Blind, Sky, Custom1, Custom2, Custom3}
 
 function generateColorPresets()
     Cmd('ClearAll')
@@ -75,17 +85,17 @@ end
 
 function generateAllColorMacros()
     Cmd('ClearAll')
-    Cmd('ChangeDestination Macro')
     for i, color in ipairs(colors) do
+        Cmd('ChangeDestination Macro')
         Cmd('Store ' .. 100 + color.id .. ' /Overwrite')
-        Cmd('Label ' .. 100 + color.id .. ' "All ' .. color.Name)
         Cmd('ChangeDestination '..100+color.id)
+        Cmd('Label Macro ' .. 100 + color.id .. ' "All ' .. color.Name..'"')
         for k = 1, 6, 1 do
             Cmd('Insert')
-            Cmd('Set '..k..' Property "Command"' .. 'Go+ "L' .. k .. ' ' .. color.Name .. '"')
+            Cmd('Set '..k..' Property "Command" ' .. '"Go+ Sequence \'L' .. k .. ' ' .. color.Name .. '\'')
         end
+        Cmd('ChangeDestination Root')
     end
-    Cmd('ChangeDestination Root')
 end
 
 
@@ -150,6 +160,24 @@ function generatePositionsPresets()
     end
 end
 
+function generatePositionsSequences()
+    Cmd('ClearAll')
+
+    local SingleSeqNum = 2000
+    for k = 1, 6, 1 do
+        for i, position in ipairs(positions) do
+            Cmd('ClearAll')
+            Cmd('Group ' .. k)
+            Cmd('At Preset 2.' .. i)
+            Cmd('Delete Sequence ' .. SingleSeqNum)
+            Cmd('Store Sequence ' .. SingleSeqNum .. '/O')
+            Cmd('Label Sequence ' .. SingleSeqNum .. ' \"L'.. k ..' '.. position.Name ..'\"')
+            Cmd('Assign Appearance ' .. 1100 + position.id .. ' At Sequence ' .. SingleSeqNum .. ' /O')
+            SingleSeqNum = SingleSeqNum + 1
+        end
+    end
+end
+
 function generateZoomPresets()
     Cmd('ClearAll')
     for k = 1, 6, 1 do
@@ -173,6 +201,7 @@ function main()
 
     Cmd('Set Preset 2 Property "PresetMode" "Selective"')
     generatePositionsPresets()
+    generatePositionsSequences()
 
     Cmd('Set Preset 4 Property "PresetMode" "Universal"')
     generateColorPresets()
