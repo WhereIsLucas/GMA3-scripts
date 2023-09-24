@@ -10,17 +10,20 @@ function generateGroups()
     Cmd('ClearAll')
 
     for i, groupName in ipairs(groupList) do
-        Cmd('Store Group '..i..' /Overwrite')
+        Cmd('Store Group '..i..' /Merge')
         Cmd('Label Group '..i..' "'..groupName..' Grid"')
 
-        Cmd('Store Group '..(i+18)..' /Overwrite')
+        Cmd('Store Group '..(i+18)..' /Merge')
         Cmd('Label Group '..(i+18)..' "'..groupName)
 
-       Cmd('Store Group '..(i+36)..' /Overwrite')
+       Cmd('Store Group '..(i+36)..' /Merge')
        Cmd('Label Group '..(i+36)..' "'..groupName..' Odd"')
 
-       Cmd('Store Group '..(i+54)..' /Overwrite')
+       Cmd('Store Group '..(i+54)..' /Merge')
        Cmd('Label Group '..(i+54)..' "'..groupName..' Even"')
+
+        Cmd('Store Group '..(i+72)..' /Merge')
+        Cmd('Label Group '..(i+72)..' "'..groupName..' Ground"')
     end
 end
 
